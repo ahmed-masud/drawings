@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Resiliate Enterprise Network">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Perimeter -->
+        <mxCell id="2" value="Internet" style="rounded=1;whiteSpace=wrap;html=1;"
+                vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="Router" style="rounded=1;whiteSpace=wrap;html=1;"
+                vertex="1" parent="1">
+          <mxGeometry x="300" y="80" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="UTM / Firewall" style="rounded=1;whiteSpace=wrap;html=1;"
+                vertex="1" parent="1">
+          <mxGeometry x="300" y="140" width="100" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Core & Distribution -->
+        <mxCell id="5" value="Core Switch" style="rounded=1;whiteSpace=wrap;html=1;"
+                vertex="1" parent="1">
+          <mxGeometry x="300" y="200" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="Distribution Switch" style="rounded=1;whiteSpace=wrap;html=1;"
+                vertex="1" parent="1">
+          <mxGeometry x="300" y="260" width="120" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Edge Layer & Endpoints -->
+        <mxCell id="7" value="Edge Switch" style="rounded=1;whiteSpace=wrap;html=1;"
+                vertex="1" parent="1">
+          <mxGeometry x="100" y="340" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="PC\n(Resiliate Agent)" style="rounded=1;whiteSpace=wrap;html=1;"
+                vertex="1" parent="1">
+          <mxGeometry x="20" y="420" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="IP Phone\n(Resiliate Agent)" style="rounded=1;whiteSpace=wrap;html=1;"
+                vertex="1" parent="1">
+          <mxGeometry x="140" y="420" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="Soft-Phone\n(Resiliate Agent)" style="rounded=1;whiteSpace=wrap;html=1;"
+                vertex="1" parent="1">
+          <mxGeometry x="260" y="420" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="IP Camera" style="rounded=1;whiteSpace=wrap;html=1;"
+                vertex="1" parent="1">
+          <mxGeometry x="380" y="420" width="80" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Resiliate Control & Storage -->
+        <mxCell id="12" value="Resiliate® Control Plane" style="rounded=1;whiteSpace=wrap;html=1;"
+                vertex="1" parent="1">
+          <mxGeometry x="500" y="200" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="Cybernetic Engram\nFilesystem Cluster"
+                style="shape=cylinder;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="260" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" value="Backup System" style="rounded=1;whiteSpace=wrap;html=1;"
+                vertex="1" parent="1">
+          <mxGeometry x="500" y="340" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" value="Management Console" style="rounded=1;whiteSpace=wrap;html=1;"
+                vertex="1" parent="1">
+          <mxGeometry x="500" y="420" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Connections -->
+        <mxCell id="20" style="endArrow=block;html=1;" edge="1" source="2" target="3" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="21" style="endArrow=block;html=1;" edge="1" source="3" target="4" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="22" style="endArrow=block;html=1;" edge="1" source="4" target="5" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="23" style="endArrow=block;html=1;" edge="1" source="5" target="6" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="24" style="endArrow=block;html=1;" edge="1" source="6" target="7" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="25" style="endArrow=block;html=1;" edge="1" source="7" target="8" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="26" style="endArrow=block;html=1;" edge="1" source="7" target="9" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="27" style="endArrow=block;html=1;" edge="1" source="7" target="10" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="28" style="endArrow=block;html=1;" edge="1" source="7" target="11" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="29" style="endArrow=block;html=1;" edge="1" source="6" target="12" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="30" style="endArrow=block;html=1;" edge="1" source="12" target="13" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="31" style="endArrow=block;html=1;" edge="1" source="13" target="14" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="32" style="endArrow=block;html=1;" edge="1" source="14" target="15" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+
